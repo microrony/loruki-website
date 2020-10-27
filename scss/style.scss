@@ -1,2 +1,30 @@
 @import 'config';
 @import 'main';
+
+#header {
+  background-color: $blue-color;
+  color: $white-color;
+  height: 70px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #navbar ul li {
+      display: inline-block;
+
+      a {
+        margin: 0 10px;
+        padding: 10px 0;
+        color: $white-color;
+
+        &:hover {
+          border-bottom: 2px solid $white-color;
+        }
+      }
+    }
+  }
+}
+
+@import 'utilities'
