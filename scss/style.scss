@@ -43,12 +43,16 @@
     @include set-transform(skewY(-3deg));
   }
 
-  .container {
+  .grid {
     grid-template-columns: 55% 45%;
-    gap: 2rem;
+  }
+
+  .container {
     overflow: visible;
 
     .showcase-text {
+      place-self: center start;
+
       h1 {
         font-size: 2.5rem;
       }
