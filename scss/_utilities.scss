@@ -11,3 +11,38 @@
   align-items: center;
   height: 100%;
 }
+
+.grid {
+  display: grid;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.4rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+
+  &:hover {
+    transform: scale(.98);
+  }
+}
+
+.btn-outline {
+  border: 2px solid $white-color;
+  color: $white-color;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: $white-color;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
