@@ -17,3 +17,10 @@ $light-color: #f4f4f4;
   background-color: $color;
   color: set-text-color($color);
 }
+
+@mixin set-transform($value) {
+  transform: $value;
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+}

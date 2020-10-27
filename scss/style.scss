@@ -31,12 +31,22 @@
   color: $white-color;
   position: relative;
 
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: $white-color;
+    @include set-transform(skewY(-3deg));
+  }
+
   .container {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 55% 45%;
     gap: 2rem;
-    justify-content: space-between;
-    align-content: center;
-    height: 100%;
+    overflow: visible;
 
     .showcase-text {
       h1 {
@@ -44,28 +54,35 @@
       }
 
       p {
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-bottom: 1rem;
       }
     }
 
     .showcase-form {
-      @include set-background($white-color);
-      box-shadow: 0 5px 10px lighten($black-color, 30);
+      height: 350px;
+      position: relative;
+      top: 60px;
+      width: 400px;
+      padding: 2.5rem;
+      z-index: 100;
+      justify-self: right;
 
       h2 {
         margin: 1rem 0;
       }
 
       .form-control {
-        margin-bottom: 1rem;
+        margin: 2rem 0;
 
-        input {
+        input[type='text'],
+        input[type='email'] {
           width: 100%;
           border: none;
           outline: none;
-          border-bottom: 2px solid fade-out($dark-color, .5);
-          padding: 5px;
+          border-bottom: 1px solid fade-out($dark-color, 0.5);
+          padding: 3px;
+          font-size: 1rem;
         }
       }
     }
