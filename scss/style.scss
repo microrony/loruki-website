@@ -55,7 +55,6 @@
     overflow: visible;
 
     .showcase-text {
-      place-self: center start;
 
       h1 {
         font-size: 2.5rem;
@@ -137,10 +136,6 @@
 .cloud {
   .grid {
     grid-template-columns: 4fr 3fr;
-
-    .text-center {
-      align-self: center;
-    }
   }
 }
 

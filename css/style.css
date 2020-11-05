@@ -87,10 +87,6 @@ img {
   overflow: visible;
 }
 
-#showcase .container .showcase-text {
-  place-self: center start;
-}
-
 #showcase .container .showcase-text h1 {
   font-size: 2.5rem;
 }
@@ -158,10 +154,6 @@ img {
 
 .cloud .grid {
   grid-template-columns: 4fr 3fr;
-}
-
-.cloud .grid .text-center {
-  align-self: center;
 }
 
 .container {
@@ -420,7 +412,7 @@ img {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   height: 100%;
 }
 
