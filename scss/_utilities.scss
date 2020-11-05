@@ -1,9 +1,13 @@
+// Main
+
 .container {
   max-width: 1100px;
   padding: 0 40px;
   overflow: auto;
   margin: 0 auto;
 }
+
+// Spacing
 
 $spaceamounts: (1,2,3,4,5,6);
 
@@ -33,6 +37,8 @@ $spaceamounts: (1,2,3,4,5,6);
   }
 }
 
+// Buttons
+
 .btn {
   display: inline-block;
   padding: 0.4rem 1.5rem;
@@ -57,10 +63,68 @@ $spaceamounts: (1,2,3,4,5,6);
   }
 }
 
-.btn-primary {
-  background-color: $primary-color;
-  color: $white-color;
+// Background and Color
+
+.bg-primary, .btn-primary {
+  @include set-background($primary-color);
 }
+
+.bg-secondary, .btn-secondary {
+  @include set-background($secondary-color);
+}
+
+.bg-dark, .btn-dark {
+  @include set-background($dark-color);
+}
+
+.bg-light, .btn-light {
+  @include set-background($light-color);
+}
+
+
+// Text
+
+.lead {
+  font-size: 1.2rem;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-dark {
+  color: $dark-color;
+}
+
+.text-light {
+  color: $light-color;
+}
+
+// Others
 
 .card {
   @include set-background($white-color);
@@ -70,9 +134,7 @@ $spaceamounts: (1,2,3,4,5,6);
   margin: 0.8rem;
 }
 
-.text-center {
-  text-align: center;
-}
+// Grid & Flex Box
 
 .flex {
   display: flex;
