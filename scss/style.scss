@@ -1,6 +1,8 @@
 @import 'config';
 @import 'main';
 
+// Navabr
+
 #header {
   background-color: $primary-color;
   color: $white-color;
@@ -24,6 +26,8 @@
     }
   }
 }
+
+// Showcase
 
 #showcase {
   background-color: $primary-color;
@@ -92,5 +96,27 @@
     }
   }
 }
+
+// Stats
+
+.stats {
+  padding-top: 100px;
+
+  .stats-heading {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .grid {
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
 
 @import 'utilities';
