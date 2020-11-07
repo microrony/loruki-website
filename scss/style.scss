@@ -30,9 +30,8 @@
 // Showcase
 
 #showcase {
-  background-color: $primary-color;
+  @include set-background($primary-color);
   height: 400px;
-  color: $white-color;
   position: relative;
 
   &::before,
@@ -55,7 +54,6 @@
     overflow: visible;
 
     .showcase-text {
-
       h1 {
         font-size: 2.5rem;
       }
@@ -131,7 +129,7 @@
   }
 }
 
-// Cloud 
+// Cloud
 
 .cloud {
   .grid {
@@ -139,5 +137,29 @@
   }
 }
 
+// Languages
+
+.languages {
+
+  > h2 {
+    margin: 1.5rem 0;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    text-align: center;
+    max-width: 120px;
+    margin: 18px 10px 40px;
+
+    h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+  }
+}
 
 @import 'utilities';
