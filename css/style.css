@@ -453,7 +453,6 @@ img {
 }
 
 @media (max-width: 768px) {
-  .grid .grid,
   #showcase .grid,
   .stats .grid,
   .cloud .grid,
