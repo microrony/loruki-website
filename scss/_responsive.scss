@@ -1,12 +1,44 @@
 // Tabler and Up
 @media (max-width: 768px) {
+  .grid,
+  #showcase,
+  .stats,
+  .cloud,
+  .footer,
+  .cli {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
 
+  #showcase {
+    height: auto;
+
+    .showcase-text {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .showcase-form {
+      justify-self: center;
+      margin: auto;
+    }
+  }
+
+  .cli {
+    .grid {
+      > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+  }
 }
 
 // Mobile
 @media (max-width: 500px) {
   #header {
-
     height: 110px;
 
     .flex {
