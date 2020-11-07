@@ -79,13 +79,15 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
   @include set-background($light-color);
 }
 
-.bg-primary a,
-.btn-primary a,
-.bg-secondary a,
-.btn-secondary a,
-.bg-dark a,
-.btn-dark a {
-  color: $white-color;
+.bg-primary,
+.btn-primary,
+.bg-secondary,
+.btn-secondary,
+.bg-dark,
+.btn-dark {
+  a {
+    color: $white-color;
+  }
 }
 
 // Text

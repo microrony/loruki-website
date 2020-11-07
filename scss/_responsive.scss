@@ -1,0 +1,53 @@
+// Tablets and under
+@media (max-width: 768px) {
+  .grid,
+  #showcase,
+  .stats,
+  .cloud,
+  .cli,
+  .footer {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+
+  #showcase {
+    height: auto;
+
+    .showcase-text {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .showcase-form {
+      justify-self: center;
+      margin: auto;
+    }
+  }
+
+  .cli {
+    .grid {
+      > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 500px) {
+  #header {
+    height: 110px;
+
+    .flex {
+      flex-direction: column;
+
+      ul {
+        padding: 10px;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+      }
+    }
+  }
+}
