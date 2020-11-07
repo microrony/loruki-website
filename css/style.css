@@ -175,6 +175,10 @@ img {
   margin-bottom: 10px;
 }
 
+.footer .social a {
+  margin: 0 10px;
+}
+
 .container {
   max-width: 1100px;
   padding: 0 40px;
@@ -346,24 +350,37 @@ img {
   background-color: transparent;
 }
 
-.bg-primary, .btn-primary {
+.bg-primary,
+.btn-primary {
   background-color: #047aed;
   color: #fff;
 }
 
-.bg-secondary, .btn-secondary {
+.bg-secondary,
+.btn-secondary {
   background-color: #1c3fa8;
   color: #fff;
 }
 
-.bg-dark, .btn-dark {
+.bg-dark,
+.btn-dark {
   background-color: #002240;
   color: #fff;
 }
 
-.bg-light, .btn-light {
+.bg-light,
+.btn-light {
   background-color: #f4f4f4;
   color: #002240;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
 }
 
 .lead {

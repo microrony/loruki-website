@@ -9,7 +9,7 @@
 
 // Spacing
 
-$spaceamounts: (1,2,3,4,5,6);
+$spaceamounts: (1, 2, 3, 4, 5, 6);
 
 @each $space in $spaceamounts {
   .m-#{$space} {
@@ -59,22 +59,34 @@ $spaceamounts: (1,2,3,4,5,6);
 
 // Background and Color
 
-.bg-primary, .btn-primary {
+.bg-primary,
+.btn-primary {
   @include set-background($primary-color);
 }
 
-.bg-secondary, .btn-secondary {
+.bg-secondary,
+.btn-secondary {
   @include set-background($secondary-color);
 }
 
-.bg-dark, .btn-dark {
+.bg-dark,
+.btn-dark {
   @include set-background($dark-color);
 }
 
-.bg-light, .btn-light {
+.bg-light,
+.btn-light {
   @include set-background($light-color);
 }
 
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: $white-color;
+}
 
 // Text
 
