@@ -156,6 +156,11 @@ img {
   grid-template-columns: 4fr 3fr;
 }
 
+.features-head .grid img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
 .languages > h2 {
   margin: 1.5rem 0;
 }
