@@ -182,6 +182,11 @@ img {
   margin-right: 1.2rem;
 }
 
+.docs-head .grid img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
 .languages > h2 {
   margin: 1.5rem 0;
 }
