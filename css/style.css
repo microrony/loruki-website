@@ -161,6 +161,11 @@ img {
   justify-self: flex-end;
 }
 
+.features-sub-head .grid img {
+  width: 300px;
+  justify-self: flex-end;
+}
+
 .languages > h2 {
   margin: 1.5rem 0;
 }
