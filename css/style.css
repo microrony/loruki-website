@@ -166,6 +166,22 @@ img {
   justify-self: flex-end;
 }
 
+.features-main .grid {
+  padding: 2rem;
+}
+
+.features-main .grid .card:first-child {
+  grid-column: 1 / 4;
+}
+
+.features-main .grid .card:nth-child(2) {
+  grid-column: 1 / 3;
+}
+
+.features-main .grid .card > i {
+  margin-right: 1.2rem;
+}
+
 .languages > h2 {
   margin: 1.5rem 0;
 }
