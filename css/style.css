@@ -563,6 +563,10 @@ code, pre {
   color: #f4f4f4;
 }
 
+.text-white {
+  color: #fff;
+}
+
 .flex {
   display: flex;
   justify-content: center;
