@@ -40,6 +40,11 @@ code, pre {
   padding: 0.8rem;
 }
 
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
 #header {
   background-color: #047aed;
   color: #fff;
