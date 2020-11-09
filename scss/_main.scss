@@ -39,3 +39,8 @@ code, pre {
   @include set-background($dark-color);
   padding: 0.8rem;
 }
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
