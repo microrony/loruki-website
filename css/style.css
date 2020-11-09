@@ -93,6 +93,10 @@ code, pre {
   overflow: visible;
 }
 
+#showcase .container .showcase-text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
 #showcase .container .showcase-text h1 {
   font-size: 2.5rem;
 }
@@ -110,6 +114,7 @@ code, pre {
   padding: 2.5rem;
   z-index: 100;
   justify-self: right;
+  animation: slideInFromRight 1s ease-in;
 }
 
 #showcase .container .showcase-form h2 {
@@ -132,6 +137,7 @@ code, pre {
 
 .stats {
   padding-top: 100px;
+  animation: slideInFromBottom 1s ease-in;
 }
 
 .stats .stats-heading {
@@ -160,6 +166,25 @@ code, pre {
 
 .cloud .grid {
   grid-template-columns: 4fr 3fr;
+}
+
+.languages > h2 {
+  margin: 1.5rem 0;
+}
+
+.languages .flex {
+  flex-wrap: wrap;
+}
+
+.languages .card {
+  text-align: center;
+  max-width: 120px;
+  margin: 18px 10px 40px;
+}
+
+.languages .card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .features-head .grid img {
@@ -213,27 +238,44 @@ code, pre {
   font-weight: bold;
 }
 
-.languages > h2 {
-  margin: 1.5rem 0;
-}
-
-.languages .flex {
-  flex-wrap: wrap;
-}
-
-.languages .card {
-  text-align: center;
-  max-width: 120px;
-  margin: 18px 10px 40px;
-}
-
-.languages .card h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
 .footer .social a {
   margin: 0 10px;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .container {

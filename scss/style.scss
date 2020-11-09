@@ -54,6 +54,7 @@
     overflow: visible;
 
     .showcase-text {
+      animation: slideInFromLeft 1s ease-in;
       h1 {
         font-size: 2.5rem;
       }
@@ -72,6 +73,7 @@
       padding: 2.5rem;
       z-index: 100;
       justify-self: right;
+      animation: slideInFromRight 1s ease-in;
 
       h2 {
         margin: 1rem 0;
@@ -98,6 +100,7 @@
 
 .stats {
   padding-top: 100px;
+  animation: slideInFromBottom 1s ease-in;
 
   .stats-heading {
     max-width: 500px;
@@ -137,9 +140,6 @@
   }
 }
 
-@import 'features';
-@import 'docs';
-
 // Languages
 
 .languages {
@@ -165,6 +165,9 @@
   }
 }
 
+@import 'features';
+@import 'docs';
+
 // Footer
 
 .footer {
@@ -172,6 +175,6 @@
     margin: 0 10px;
   }
 }
-
+@import 'animation';
 @import 'utilities';
 @import 'responsive';
