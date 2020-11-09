@@ -17,6 +17,25 @@
   margin: 0.8rem;
 }
 
+.alert {
+  @include set-background($light-color);
+  margin: 1rem 0;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.alert-success {
+  @include set-background($success-color);
+}
+
+.alert-error {
+  @include set-background($error-color);
+}
+
 // Spacing
 
 $spaceamounts: (1, 2, 3, 4, 5, 6);

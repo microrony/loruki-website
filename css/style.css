@@ -246,6 +246,28 @@ img {
   margin: 0.8rem;
 }
 
+.alert {
+  background-color: #f4f4f4;
+  color: #002240;
+  margin: 1rem 0;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert-success {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.alert-error {
+  background-color: #d9534f;
+  color: #fff;
+}
+
 .m-1 {
   margin: 1rem;
 }
