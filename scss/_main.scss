@@ -34,3 +34,8 @@ a {
 img {
   width: 100%;
 }
+
+code, pre {
+  @include set-background($dark-color);
+  padding: 0.8rem;
+}

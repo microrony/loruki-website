@@ -34,6 +34,12 @@ img {
   width: 100%;
 }
 
+code, pre {
+  background-color: #002240;
+  color: #fff;
+  padding: 0.8rem;
+}
+
 #header {
   background-color: #047aed;
   color: #fff;
